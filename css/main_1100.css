@@ -1,6 +1,15 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 @media (min-width:1100px) {
+	      * {margin:0; box-sizing: border-box;}
+      ul,li,ol {list-style: none; margin:0; padding:0;}
+      a {text-decoration: none;}
+      input[type="button"] {font-family: 'Lato', sans-serif;}
+      button {font-family: 'Lato', sans-serif;}
+
+
+
+      #wrap {width:100%; height:auto; position: relative;}
 	
 	 .head_bot > nav > ul > li:first-of-type > a {color: #7f00ff;}
 
@@ -9,11 +18,11 @@
 		.slider_content {width:100%; display: flex; justify-content: center; flex-direction: column; align-items:center;}
 		.slider_content > h1 {font-size:50px; color:#fff; margin:5px auto; letter-spacing: -2px;}
 		.slider_content > p {font-size:20px; color:#eee; margin:10px auto; letter-spacing: -1px;}
-		.slider_content > button[name="slider_button"] {width:250px; height:50px; margin:10px auto; position: relative; top:5%; left:0; background-color: #cc00ff; font-size: 14px; font-weight: 500 ;padding: 14px 35px; border-radius: 50px; text-transform: uppercase; text-shadow: 2px 3px 8px rgb(0 0 0 / 10%); box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms; border:3px solid #cc00ff; color:#cc00ff; font-weight: bold; word-spacing: 1.5px; color:#fff;}
+		.slider_content > button[name="slider_button"] {width:250px; height:50px; margin:10px auto; position: relative; top:5%; left:0; background-color: #cc00ff; font-size: 14px; font-weight: 500 ;padding: 14px 35px; border-radius: 50px; text-transform: uppercase;  box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms; border:3px solid #cc00ff; color:#cc00ff; font-weight: bold; word-spacing: 1.5px; color:#fff;}
 		.slider_content > button[name="slider_button"]:hover {cursor: pointer; background-color:#7f00ff; color:#eee; border:3px solid #7f00ff;}
 
 
-		section {width:100%; height:auto; display: flex; justify-content: center;	}
+		.mainWrap {width:100%; height:auto; display: flex; justify-content: center;}
 
 
 		main {width:1200px; height:5000px; background-color:transparent;}
@@ -38,7 +47,7 @@
 		.schedule > img {width:80px; height:20px; margin:10px auto;}
 
 
-		.schedule > nav {width:100%; height:50px; margin:20px auto; display: flex; align-items: center; background-color: transparent; box-shadow: 4px 4px 4px 2px 2px 2px;}
+		.schedule > nav {width:100%; height:50px; margin:20px auto; display: flex; align-items: center; background-color: transparent; box-shadow: 4px 4px 4px #eee;}
 		.schedule > nav ul {width:100%; display: flex; justify-content: space-between;}
 		.schedule > nav ul li {width:200px; height:50px; background-color: transparent; text-align: center; font-size:18px; display: flex; justify-content: center; align-items: center;
 								border:none; border-bottom:1px solid #ddd; color:#111; font-weight: bold; font-family: 'Lato', sans-serif; }
@@ -76,7 +85,7 @@
 		
 
 		.schedule > .content_button {width:100%; display: flex; justify-content: center; align-items: flex-start; height:25%; margin:40px auto;}
-		.schedule > .content_button input[name="content_btn"] {background-color: transparent; font-size: 14px; font-weight: 500 ;padding: 14px 35px; border-radius: 50px; text-transform: uppercase; text-shadow: 2px 3px 8px rgb(0 0 0 / 10%); box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
+		.schedule > .content_button input[name="content_btn"] {background-color: transparent; font-size: 14px; font-weight: 500 ;padding: 14px 35px; border-radius: 50px; text-transform: uppercase;  box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
 			border:3px solid #7f00ff; color:#7f00ff; font-weight: bold; word-spacing: 1.5px; margin:0 auto;}
 		.schedule > .content_button input[name="content_btn"]:hover {cursor: pointer; background-color:#cc00ff; color:#fff; border:3px solid #cc00ff;} 
 
@@ -99,7 +108,7 @@
     	.introtext p {font-size:14px; font-family: 'Lato', sans-serif;}
 
     	.introduce > .content_button {width:100%; display: flex; justify-content: flex-start; align-items: flex-start; height:40%; flex-direction: column; position: relative; bottom:15%; left:0;}
-    	.introduce > .content_button input[name="content_btn"] {background-color: transparent; font-size: 14px; font-weight: 500 ;padding: 14px 35px; border-radius: 50px; text-transform: uppercase; text-shadow: 2px 3px 8px rgb(0 0 0 / 10%); box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
+    	.introduce > .content_button input[name="content_btn"] {background-color: transparent; font-size: 14px; font-weight: 500 ;padding: 14px 35px; border-radius: 50px; text-transform: uppercase;  box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
 			border:3px solid #7f00ff; color:#7f00ff; font-weight: bold; word-spacing: 1.5px; margin:0 auto;}
 		.introduce > .content_button input[name="content_btn"]:hover {cursor: pointer; background-color:#cc00ff; color:#fff; border:3px solid #cc00ff;} 
 
@@ -122,7 +131,7 @@
 		.video_text p {font-size: 14px; line-height: 20px; width: 100%;}
 
 		.playlist .content_button {width:100%; display: flex; justify-content: center; align-items: flex-start; height:200px; background-color: transparent; position: relative; bottom:30%; left:0;}
-    	.playlist .content_button input[name="content_btn"] {background-color: transparent; font-size: 14px; font-weight: 500 ;padding: 14px 35px; border-radius: 50px; text-transform: uppercase; text-shadow: 2px 3px 8px rgb(0 0 0 / 10%); box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
+    	.playlist .content_button input[name="content_btn"] {background-color: transparent; font-size: 14px; font-weight: 500 ;padding: 14px 35px; border-radius: 50px; text-transform: uppercase;  box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
 			border:3px solid #7f00ff; color:#7f00ff; font-weight: bold; word-spacing: 1.5px; margin:0 auto;}
 		.playlist .content_button input[name="content_btn"]:hover {cursor: pointer; background-color:#cc00ff; color:#fff; border:3px solid #cc00ff;} 
 
@@ -178,7 +187,7 @@
 		.gallerybox .fourthbox .textbox:hover {opacity: 1; border-radius: 10px;}
 
 		.galleries .content_button {width:100%; display: flex; justify-content: center; align-items: flex-start; height:40%; margin:40px auto;}
-    	.galleries  .content_button input[name="content_btn"] {background-color: transparent; font-size: 14px; font-weight: 500 ;padding: 14px 35px; border-radius: 50px; text-transform: uppercase; text-shadow: 2px 3px 8px rgb(0 0 0 / 10%); box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
+    	.galleries  .content_button input[name="content_btn"] {background-color: transparent; font-size: 14px; font-weight: 500 ;padding: 14px 35px; border-radius: 50px; text-transform: uppercase;  box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
 			border:3px solid #7f00ff; color:#7f00ff; font-weight: bold; word-spacing: 1.5px; margin:0 auto;}
 		.galleries  .content_button input[name="content_btn"]:hover {cursor: pointer; background-color:#cc00ff; color:#fff; border:3px solid #cc00ff;} 
 
@@ -201,7 +210,7 @@
 			.slicks p {font-size:1.0em; color:#fff; padding: 20px; width: 100%; height: 40%; text-align: center; font-weight: bold; font-family: 'Lato', sans-serif; }
 			.slicks .content_button {width:100%; height:60%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-content: space-around;}
 			.slicks .content_button h3 {padding:20px; font-size:30px; color:#fff; text-align: center; padding:30px;}
-			.slicks .content_button input[type="button"] {background-color: transparent; font-size: 14px; font-weight: 500 ;padding: 14px 15px; border-radius: 50px; text-transform: uppercase; text-shadow: 2px 3px 8px rgb(0 0 0 / 10%); box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
+			.slicks .content_button input[type="button"] {background-color: transparent; font-size: 14px; font-weight: 500 ;padding: 14px 15px; border-radius: 50px; text-transform: uppercase;  box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
 			border:3px solid #7f00ff; color:#eee; font-weight: bold; word-spacing: 1.5px; margin:0 auto; display: flex; justify-content: flex-start;}
 			.slicks .content_button input[type="button"]:hover {cursor: pointer; background-color:#eee; color:#7f00ff; border:3px solid #eee;}
 
@@ -210,7 +219,7 @@
 		.contact_wrap h1 {font-size:50px; letter-spacing: -2px;}
 		.contact_wrap p {font-size:18px; padding:20px 0px; font-family: 'Lato', sans-serif; width:50%; text-align: center; line-height: 24px; letter-spacing: -0.5px;}
 		.contact_wrap > .content_button {display: flex; justify-content: space-between; flex-direction: row;}
-		.contact_wrap > .content_button button {background-color: #cc00ff; font-size: 14px; font-weight: 500 ; border-radius: 50px; text-transform: uppercase; text-shadow: 2px 3px 8px rgb(0 0 0 / 10%); box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
+		.contact_wrap > .content_button button {background-color: #cc00ff; font-size: 14px; font-weight: 500 ; border-radius: 50px; text-transform: uppercase;  box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1); transition: all 300ms;
 			border:3px solid #cc00ff; color:#eee; font-weight: bold; word-spacing: 1.5px; margin:0 auto; width:200px; height: 50px; }
 		.contact_wrap > .content_button button:hover {cursor: pointer; background-color:#7f00ff; color:#eee; border:3px solid #7f00ff;}
 		.contact_wrap > .content_button button i {margin:0 10px; display: block;}
