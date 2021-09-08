@@ -12,17 +12,14 @@ $(function(){
 
    $(window).resize(function(){
 
-      if(window.innerWidth>=1100){
+      if(window.innerWidth>=1099){
 
           $('.head_nav').show();
-          
-
-
-
-
+          $('.headDetail').hide();
 
        } else {
        		$('.head_nav').hide();
+          $('.headDetail').hide();
        }
 
    });
